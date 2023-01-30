@@ -1,0 +1,33 @@
+// Class that contains the main method 
+public class UserInterface { 
+    public static void main(String[] args) { 
+        // Create a window frame 
+        JFrame frame = new JFrame("User Interface"); 
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+
+        // Create a panel and set its layout 
+        JPanel panel = new JPanel(); 
+        panel.setLayout(new FlowLayout()); 
+
+        // Create two text boxes to enter the ID number and the C02 emissions code 
+        JLabel idLabel = new JLabel("ID Number: "); 
+        JTextField idTextField = new JTextField(15); 
+        JLabel codeLabel = new JLabel("C02 Emissions Code: "); 
+        JTextField codeTextField = new JTextField(15); 
+
+        // Add the text boxes to the panel 
+        panel.add(idLabel); 
+        panel.add(idTextField); 
+        panel.add(codeLabel); 
+        panel.add(codeTextField); 
+
+        // Add the panel to the frame 
+        frame.add(panel); 
+
+        // Set the size of the frame 
+        frame.setSize(400, 100); 
+
+        // Make the frame visible 
+        frame.setVisible(true); 
+    } 
+}
